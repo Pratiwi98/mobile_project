@@ -30,12 +30,11 @@ class _LoginScreenState extends State<LoginScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
 
-          children: <Widget>[
-            
+          children: <Widget>[           
             Text(
               'Tubes Mobile',
               style: TextStyle(
-                color: Colors.white,
+                color: Colors.black,
                 fontFamily: 'Billabong', 
                 fontSize: 50.0,
               ),

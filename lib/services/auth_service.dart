@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:mobile_project/screens/feed_screen.dart';
+//import 'package:mobile_project/screens/feed_screen.dart';
 import 'package:mobile_project/screens/login_screen.dart';
 
 class AuthService{
@@ -22,7 +22,8 @@ class AuthService{
           'email': email,
           'profileImageUrl':'',
         });
-        Navigator.pushReplacementNamed(context, FeedScreen.id);
+        Navigator.pop(context);
+        //Navigator.pushReplacementNamed(context, FeedScreen.id);
       }
     } catch (e) {
       print(e);

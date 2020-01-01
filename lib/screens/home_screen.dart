@@ -40,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.black87,
         title: Center(
           child: Text(
-           "FeisalGram",
+           "Tubes Mobile",
             style: TextStyle(
               color: Colors.white,
               fontFamily: 'Billabong',

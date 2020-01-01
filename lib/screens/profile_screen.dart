@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_project/models/user_model.dart';
-import 'package:mobile_project/screens/edit_profil_screen.dart';
+import 'package:mobile_project/screens/edit_profile_screen.dart';
 import 'package:mobile_project/utilities/constants.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -99,7 +99,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               onPressed: () => Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (_) => EditProfilScreen(
+                                    builder: (_) => EditProfileScreen(
                                       user: user,
                                     ),
                                   )),

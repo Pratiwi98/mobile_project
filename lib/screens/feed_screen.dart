@@ -12,7 +12,7 @@ class _FeedScreenState extends State<FeedScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.black26,
       body: Center(
         // child: FlatButton(
         //   onPressed: () => AuthService.logout(context),

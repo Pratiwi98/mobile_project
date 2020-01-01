@@ -12,11 +12,6 @@ class MyApp extends StatelessWidget {
     return StreamBuilder<FirebaseUser>(
       stream: FirebaseAuth.instance.onAuthStateChanged,
       builder: (BuildContext context, snapshot){
-        //  if(snapshot.hasData){
-        //   return FeedScreen();
-        // }else{
-        //   return LoginScreen();
-        // }
         if(snapshot.hasData){
           return HomeScreen(userId: snapshot.data.uid);
         }else{
@@ -32,6 +27,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Tubes Mobile',
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(primaryIconTheme: Theme.of(context).primaryIconTheme.copyWith(
+        color: Colors.white,
+      )),
       home: _getScreenId(),
       routes: {
         LoginScreen.id: (context) => LoginScreen(),
