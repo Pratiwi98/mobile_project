@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_project/models/user_model.dart';
+import 'package:mobile_project/screens/edit_profil_screen.dart';
 import 'package:mobile_project/utilities/constants.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -95,7 +96,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           Container(
                             width: 200.0,
                             child: FlatButton(
-                              onPressed: () => print("coba profile"),
+                              onPressed: () => Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (_) => EditProfilScreen(
+                                      user: user,
+                                    ),
+                                  )),
                               color: Colors.blue,
                               child: Text(
                                 'Edit Profile',

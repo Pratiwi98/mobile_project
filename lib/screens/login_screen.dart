@@ -24,15 +24,18 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      backgroundColor: Colors.white,
+      body: Center(        
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
 
           children: <Widget>[
+            
             Text(
               'Tubes Mobile',
               style: TextStyle(
+                color: Colors.white,
                 fontFamily: 'Billabong', 
                 fontSize: 50.0,
               ),
